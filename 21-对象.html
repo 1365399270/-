@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-对象</title>
+</head>
+<body>
+    <script>
+        let goods = {
+            name:'小米10青春版',
+            num:100012816024,
+            weight:'0.55kg',
+            address:'中国大陆'
+        }
+        console.log(goods);
+        // 对象 查
+        console.log(goods. address);
+        console.log(goods. weight);
+        
+        // 对象 改 '小米10青春版'改成'小米10 PLUS'
+        goods.name = '小米10 PULS';
+        console.log(goods);
+        console.log(goods.name);
+        
+        
+        // 对象 增  增加颜色'粉色'
+        goods.ys = '粉色'
+        console.log(goods);
+        console.log(goods.ys);
+
+        // [] 打印
+        console.log(goods['name']);
+        console.log(goods['num']);
+        console.log(goods['weight']);
+        console.log(goods['address']);
+    </script>
+</body>
+</html>

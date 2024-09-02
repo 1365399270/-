@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐式转换</title>
+</head>
+<body>
+    <script>
+        // + 号两边只要有一个字符串，都会把另一个转换成字符串
+        console.log(1 + 1);
+        console.log('奉仙' + 1);
+
+        // 除 + 号以为的运算符 - * / 等都会把数据转换成数字类型
+        console.log(2 - 2);
+        console.log('2' - 2);  
+
+        // + 号作为正号解析可以转换成数字类型
+        console.log(+'123');
+
+        console.log(typeof '123');// 字符串类型 number
+        console.log(typeof +'123');// 数字类型 string
+        console.log(+'11' + 11); // 22
+        
+        let num = +prompt('输入年龄')
+        console.log(num);
+        
+    </script>
+</body>
+</html>

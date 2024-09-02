@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-数组筛选</title>
+</head>
+<body>
+    <script>
+        let arr = [2, 6, 1, 77, 0, 52, 0, 25, 7]
+        // 声明空数组
+        let newArr = [] // 存放比10大的数
+        let newArr2 = []// 存放除去10的数
+        // 便利数组
+        for(let i = 0; i <= arr.length; i++){
+            if(arr[i] >= 10){
+                // 满足条件增加新数组
+                // 数组.push(旧数组)
+                newArr.push(arr[i])
+            }
+            // 数组去0
+            if(arr[i] !== 0){
+                newArr2.push(arr[i])
+            }
+        }
+        // 打印结果
+        console.log(newArr);
+        console.log(newArr2);
+        
+        
+    </script>
+</body>
+</html>

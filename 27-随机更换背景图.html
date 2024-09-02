@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\\, initial-scale=1.0">
+    <title>27-随机更换背景图</title>
+    <style>
+        body{
+            background:url(/图片/5.jpg) no-repeat top center/cover;
+        }
+    </style>
+</head>
+<body>
+    <script>
+         function getRandom(N, M){
+        return Math.floor(Math.random() * (M - N + 1)) + N;
+    }
+    const random = getRandom(1, 5)
+    document.body.style.backgroundImage = `url(/图片/${random}.jpg)`
+
+    </script>
+</body>
+</html>

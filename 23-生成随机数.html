@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23-生产随机数</title>
+</head>
+<body>
+    <script>
+        // Math.random() 随机函数
+        // 0 - 10 的随机数
+        // Math.floor 向下取整
+    console.log(Math.floor(Math.random() * 11));
+
+    // 生成 5 - 10 的随机数
+    console.log(Math.floor(Math.random() * 6)) + 5;
+
+    // 生成 N - M 之间的随机数
+    function getRandom(N, M){
+        return Math.floor(Math.random() * (M - N + 1)) + N;
+    }
+    console.log(getRandom(4,8));
+    
+    
+
+    // 数组
+    let arr = ['刘子杰', '冷科翰', '张旭川', '祝昊陨']
+    let random1 = Math.floor(Math.random() * arr.length)
+    console.log(arr[random1]);
+    
+    </script>
+</body>
+</html>

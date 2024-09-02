@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26-随机图片</title>
+    <style>
+        body{
+            /* 合并边框 */
+            border-collapse: collapse;
+            height: 80px;
+            /* 表格居中 */
+            margin: 0 auto;
+            /* 内容居中 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="/图片/1-冷科翰.jpg" width="500">
+    <script>
+    function getRandom(N, M){
+        return Math.floor(Math.random() * (M - N + 1)) + N;
+    }
+    // 获取图片
+    const img = document.querySelector('img')
+    // 随机得到序号
+    const random = getRandom(1, 5)
+    // 更换路径
+    img.src = `/图片/${random}.jpg`
+    </script>
+</body>
+</html>
